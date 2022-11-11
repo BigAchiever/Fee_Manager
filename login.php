@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
+ini_set('display_error', '1');
 session_start();
 include('./db_connect.php');
 ob_start();
