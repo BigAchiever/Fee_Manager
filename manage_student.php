@@ -12,19 +12,15 @@ foreach($qry->fetch_array() as $k => $val){
         <input type="hidden" name="id" value="<?php echo isset($id) ? $id : '' ?>">
         <div id="msg" class="form-group"></div>
         <div class="form-group">
-            <label for="" class="control-label">Admission Number</label>
+            <label for="" class="control-label">Id No.</label>
             <input type="text" class="form-control" name="id_no"  value="<?php echo isset($id_no) ? $id_no :'' ?>" required>
-        </div>
-        <div class="form-group">
-            <label for="" class="control-label">Medium(Hindi/English)</label>
-            <input type="text" class="form-control" name="medium"  value="<?php echo isset($medium) ? $class :'' ?>" required>
         </div>
         <div class="form-group">
             <label for="" class="control-label">Class</label>
             <input type="text" class="form-control" name="class"  value="<?php echo isset($class) ? $class :'' ?>" required>
         </div>
         <div class="form-group">
-            <label for="" class="control-label">Student Name</label>
+            <label for="" class="control-label">Name</label>
             <input type="text" class="form-control" name="name"  value="<?php echo isset($name) ? $name :'' ?>" required>
         </div>
         <div class="form-group">
@@ -32,11 +28,11 @@ foreach($qry->fetch_array() as $k => $val){
             <input type="text" class="form-control" name="father_name"  value="<?php echo isset($father_name) ? $father_name :'' ?>" required>
         </div>
         <div class="form-group">
-            <label for="" class="control-label">Contact Number</label>
+            <label for="" class="control-label">Contact</label>
             <input type="text" class="form-control" name="contact"  value="<?php echo isset($contact) ? $contact :'' ?>" required>
         </div>
         <div class="form-group">
-            <label for="" class="control-label">Email ID (Optional)</label>
+            <label for="" class="control-label">Email</label>
             <input type="email" class="form-control" name="email"  value="<?php echo isset($email) ? $email :'' ?>" required>
         </div>
         <div class="form-group">

@@ -20,7 +20,8 @@ if(isset($_GET['id'])){
 					while($row= $fees->fetch_assoc()):
 						$paid = $conn->query("SELECT sum(amount) as paid FROM payments where ef_id=".$row['id'].(isset($id) ? " and id!=$id " : ''));
 						$paid = $paid->num_rows > 0 ? $paid->fetch_array()['paid']:'';
-						$balance = $row['total_fee'] - $paid;
+						$discount = $row['discount'];
+						$balance = $row['total_fee'] - $paid - $discount;
 				?>
 				<option value="<?php echo $row['id'] ?>" data-balance="<?php echo $balance ?>" <?php echo isset($ef_id) && $ef_id == $row['id'] ? 'selected' : '' ?>><?php echo  $row['ef_no'].' | '.ucwords($row['sname']) ?></option>
 				<?php endwhile; ?>

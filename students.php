@@ -71,7 +71,7 @@
 									</td>
 									<td class="">
 										 <p><small>Email ID: <i><b><?php echo $row['email'] ?></i></small></p>
-										 <p><small>Contact No. #: <i><b><?php echo $row['contact'] ?></i></small></p>
+										 <p><small>Contact Number #: <i><b><?php echo $row['contact'] ?></i></small></p>
 										 <p><small>Address: <i><b><?php echo $row['address'] ?></i></small></p>
 									</td>
 									<td class="text-center">

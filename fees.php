@@ -27,7 +27,7 @@
 			<div class="col-md-12">
 				<div class="card">
 					<div class="card-header">
-						<b>List of Student fees </b>
+						<h6><b>Adding New Student Fees / Checking Paid Fees Of Student<b></h6>
 						<span class="float:right"><a class="btn btn-primary btn-block btn-sm col-sm-2 float-right" href="javascript:void(0)" id="new_fees">
 					<i class="fa fa-plus"></i> New 
 				</a></span>
@@ -37,9 +37,9 @@
 							<thead>
 								<tr>
 									<th class="text-center">#</th>
-									<th class="">ID No.</th>
+									<th class="">Admission No.</th>
 									<th class="">EF No.</th>
-									<th class="">Class</th>
+									<!-- <th class="">Class</th> -->
 									<th class="">Name</th>
 									<!-- <th class="">Father Name</th> -->
 									<th class="">Payable Fee</th>
@@ -69,9 +69,9 @@
 									<td>
 										<p> <b><?php echo $row['ef_no'] ?></b></p>
 									</td>
-									<td>
+									<!-- <td>
 										<p> <b><?php echo $row['class'] ?></b></p>
-									</td>
+									</td> -->
 									<td>
 										<p> <b><?php echo ucwords($row['sname']) ?></b></p>
 									</td>

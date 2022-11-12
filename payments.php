@@ -10,7 +10,7 @@
 			<div class="col-md-12">
 				<div class="card">
 					<div class="card-header">
-						<b>List of Payments </b>
+						<h6><b>Collecting Payments/ Printing Receipts Recipts </b></h6>
 						<span class="float:right"><a class="btn btn-primary btn-block btn-sm col-sm-2 float-right" href="javascript:void(0)" id="new_payment">
 					<i class="fa fa-plus"></i> New 
 				</a></span>
@@ -21,8 +21,8 @@
 								<tr>
 									<th class="text-center">#</th>
 									<th class="">Date</th>
-									<th class="">ID No.</th>
-									<th class="">EF No.</th>
+									<th class="">Admission No.</th>
+									<th class="">Enrollment No.</th>
 									<th class="">Name</th>
 									<th class="">Paid Amount</th>
 									<th class="text-center">Action</th>
@@ -57,7 +57,7 @@
 									<td class="text-center">
 										<button class="btn btn-sm btn-outline-primary view_payment" type="button" data-id="<?php echo $row['id'] ?>" data-ef_id="<?php echo $row['ef_id'] ?>">View</button>
 										<button class="btn btn-sm btn-outline-primary edit_payment" type="button" data-id="<?php echo $row['id'] ?>" >Edit</button>
-										<!-- <button class="btn btn-sm btn-outline-danger delete_payment" type="button" data-id="<?php echo $row['id'] ?>">Delete</button> -->
+										<button class="btn btn-sm btn-outline-danger delete_payment" type="button" data-id="<?php echo $row['id'] ?>">Delete</button>
 									</td>
 								</tr>
 								<?php 
