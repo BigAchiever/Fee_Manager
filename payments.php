@@ -22,7 +22,7 @@
 									<th class="text-center">#</th>
 									<th class="">Date</th>
 									<th class="">Admission No.</th>
-									<th class="">Enrollment No.</th>
+									<!-- <th class="">Enrollment No.</th> -->
 									<th class="">Name</th>
 									<th class="">Paid Amount</th>
 									<th class="text-center">Action</th>
@@ -42,9 +42,9 @@
 									<td>
 										<p> <b><?php echo date("M d,Y H:i A",strtotime($row['date_created'])) ?></b></p>
 									</td>
-									<td>
+									<!-- <td>
 										<p> <b><?php echo $row['id_no'] ?></b></p>
-									</td>
+									</td> -->
 									<td>
 										<p> <b><?php echo $row['ef_no'] ?></b></p>
 									</td>

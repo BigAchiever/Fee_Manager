@@ -37,8 +37,8 @@
 							<thead>
 								<tr>
 									<th class="text-center">#</th>
+									<!-- <th class="">Admission No.</th> -->
 									<th class="">Admission No.</th>
-									<th class="">EF No.</th>
 									<!-- <th class="">Class</th> -->
 									<th class="">Name</th>
 									<!-- <th class="">Father Name</th> -->
@@ -63,9 +63,9 @@
 								?>
 								<tr>
 									<td class="text-center"><?php echo $i++ ?></td>
-									<td>
+									<!-- <td>
 										<p> <b><?php echo $row['id_no'] ?></b></p>
-									</td>
+									</td> -->
 									<td>
 										<p> <b><?php echo $row['ef_no'] ?></b></p>
 									</td>

@@ -12,7 +12,7 @@ if(isset($_GET['id'])){
 		<div id="msg"></div>
 		<input type="hidden" name="id" value="<?php echo isset($id) ? $id : '' ?>">
 		 <div class="form-group">
-            <label for="" class="control-label">Enrollment No./ E.F. No.</label>
+            <label for="" class="control-label">Admission Number</label>
             <input type="text" class="form-control" name="ef_no"  value="<?php echo isset($ef_no) ? $ef_no :'' ?>" required>
         </div>
 		<div class="form-group">
@@ -29,7 +29,7 @@ if(isset($_GET['id'])){
 		</div>
 		
 		<div class="form-group">
-			<label for="" class="control-label">Course</label>
+			<label for="" class="control-label">Class/Medium</label>
 			<select name="course_id" id="course_id" class="custom-select input-sm select2">
 				<option value=""></option>
 				<?php
@@ -41,7 +41,7 @@ if(isset($_GET['id'])){
 			</select>
 		</div>
 		<div class="form-group">
-            <label for="" class="control-label">Discount</label>
+            <label for="" class="control-label">Discount(Optional)</label>
             <input type="text" class="form-control text-right" name="discount"  value="<?php echo isset($discount) ? number_format($discount) :'' ?>" required>
         </div>
 		 <div class="form-group">
