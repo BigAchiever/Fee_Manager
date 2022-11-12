@@ -36,7 +36,7 @@ if(isset($_GET['id'])){
             <input type="text" class="form-control text-right" name="amount"  value="<?php echo isset($amount) ? number_format($amount) :0 ?>" required>
         </div>
         <div class="form-group">
-            <label for="" class="control-label">Remakrs</label>
+            <label for="" class="control-label">Remarks</label>
             <textarea name="remarks" id="" cols="30" rows="3" class="form-control" required=""><?php echo isset($remarks) ? $remarks :'' ?></textarea>
         </div>
 	</form>

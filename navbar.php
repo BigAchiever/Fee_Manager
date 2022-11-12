@@ -3,9 +3,9 @@
 	.collapse a{
 		text-indent:10px;
 	}
-	nav#sidebar{
-		/*background: url(assets/uploads/<?php echo $_SESSION['system']['cover_img'] ?>) !important*/
-	}
+	/* nav#sidebar{
+		background: url(assets/uploads/<?php echo $_SESSION['system']['cover_img'] ?>) !important
+	} */
 </style>
 
 <nav id="sidebar" class='mx-lt-5 bg-dark' >

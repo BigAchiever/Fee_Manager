@@ -43,13 +43,14 @@ while($row=$payments->fetch_array()){
 	<div class="flex">
 		<div class="w-50">
 			<p>Admission Number: <b><?php echo $id_no ?></b></p>
-			<p>Student: <b><?php echo ucwords($sname) ?></b></p>
-			<p>Course/Level: <b><?php echo $class ?></b></p>
+			<p>Student Name: <b><?php echo ucwords($sname) ?></b></p>
+			<p>Class/Medium: <b><?php echo $class ?></b></p>
 		</div>
 		<?php if($_GET['pid'] > 0): ?>
 		<div class="w-50">
 			<p>Payment Date: <b><?php echo isset($pay_arr[$_GET['pid']]) ? date("M d,Y",strtotime($pay_arr[$_GET['pid']]['date_created'])): '' ?></b></p>
 			<p>Paid Amount: <b><?php echo isset($pay_arr[$_GET['pid']]) ? number_format($pay_arr[$_GET['pid']]['amount'],2): '' ?></b></p>
+			<!-- <p>Discount: <b><?php echo isset($pay_arr[$_GET['pid']]) ? number_format($pay_arr[$_GET['pid']]['discount'],2): '' ?></b></p> -->
 			<p>Remarks: <b><?php echo isset($pay_arr[$_GET['pid']]) ? $pay_arr[$_GET['pid']]['remarks']: '' ?></b></p>
 		</div>
 		<?php endif; ?>
@@ -120,13 +121,15 @@ while($row=$payments->fetch_array()){
 						<td>Total Paid</td>
 						<td class='text-right'><b><?php echo number_format($ptotal) ?></b></td>
 					</tr>
-					<!-- <tr>
-						<td>Discount Given</td>
-						<td class='text-right'><b><?php echo number_format($ptotal) ?></b></td>
-					</tr> -->
+				
 					<tr>
-						<td>Balance</td>
-						<td class='text-right'><b><?php echo number_format($ftotal-$ptotal) ?></b></td>
+						<td>Overall Concession</td>
+						<td class='text-right'><b><?php echo number_format($discount) ?></b></td>
+					</tr>
+					
+					<tr>
+						<td>Amount Left</td>
+						<td class='text-right'><b><?php echo number_format($ftotal-$ptotal-$discount) ?></b></td>
 					</tr>
 				</table>
 			</td>			

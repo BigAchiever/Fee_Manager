@@ -44,7 +44,7 @@
 									<!-- <th class="">Father Name</th> -->
 									<th class="">Payable Fee</th>
 									<th class="">Paid</th>
-									<th class="">Discount</th>
+									<th class="">Overall Concession</th>
 									<th class="">Balance</th>
 									<th class="text-center">Action</th>
 								</tr>
