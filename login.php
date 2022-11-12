@@ -25,7 +25,7 @@ ob_end_flush();
 <html> -->
 <?php 
 
-if(isset($_SESSION['login_id']));
+if(isset($_SESSION['login_id']))
 header("location:index.php?page=home");
 
 ?>
@@ -83,7 +83,7 @@ header("location:index.php?page=home");
 	$('#login-form').submit(function(e){
 		e.preventDefault();
 		$('#login-form button[type="button"]').attr('disabled',true).html('Logging in...');
-		if($(this).find('.alert-danger').length > 0 ;)
+		if($(this).find('.alert-danger').length > 0)
 			$(this).find('.alert-danger').remove();
 		$.ajax({
 			url:'ajax.php?action=login',
