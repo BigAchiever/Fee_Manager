@@ -37,9 +37,10 @@
 							<thead>
 								<tr>
 									<th class="text-center">#</th>
-									<th class="">ID No.</th>
+									<th class="">Admission No.</th>
 									<th class="">Class</th>
-									<th class="">Name</th>
+									<th class="">Medium</th>
+									<th class="">Student Name</th>
 									<th class="">Father Name</th>
 									<th class="">Information</th>
 									<th class="text-center">Action</th>
@@ -60,14 +61,17 @@
 										<p> <b><?php echo $row['class'] ?></b></p>
 									</td>
 									<td>
+										<p> <b><?php echo $row['medium'] ?></b></p>
+									</td>
+									<td>
 										<p> <b><?php echo ucwords($row['name']) ?></b></p>
 									</td>
 									<td>
 										<p> <b><?php echo ucwords($row['father_name']) ?></b></p>
 									</td>
 									<td class="">
-										 <p><small>Email: <i><b><?php echo $row['email'] ?></i></small></p>
-										 <p><small>Contact #: <i><b><?php echo $row['contact'] ?></i></small></p>
+										 <p><small>Email ID: <i><b><?php echo $row['email'] ?></i></small></p>
+										 <p><small>Contact No. #: <i><b><?php echo $row['contact'] ?></i></small></p>
 										 <p><small>Address: <i><b><?php echo $row['address'] ?></i></small></p>
 									</td>
 									<td class="text-center">
