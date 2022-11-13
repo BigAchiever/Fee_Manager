@@ -1,5 +1,5 @@
-<!-- <!DOCTYPE html>
-<html lang="en"> -->
+<!DOCTYPE html>
+<html lang="en">
 
 <?php
 error_reporting(E_ALL);
@@ -113,4 +113,4 @@ if (isset($_SESSION['login_id']))
 	})
 </script>
 
-<!-- </html> -->
+</html>

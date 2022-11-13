@@ -122,10 +122,10 @@ while($row=$payments->fetch_array()){
 						<td class='text-right'><b><?php echo number_format($ptotal) ?></b></td>
 					</tr>
 				
-					<tr>
+					<!-- <tr>
 						<td>Overall Concession</td>
 						<td class='text-right'><b><?php echo number_format($discount) ?></b></td>
-					</tr>
+					</tr> -->
 					
 					<tr>
 						<td>Amount Left</td>

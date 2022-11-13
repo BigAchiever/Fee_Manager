@@ -27,16 +27,29 @@ if(isset($_GET['id'])){
 				<?php endwhile; ?>
 			</select>
 		</div>
+
+		<div class="form-group">
+			<label for="" class="control-label">Father Name</label>
+			<select name="father_name" id="father_name" class="custom-select input-sm select2">
+				<option value=""></option>
+				<?php
+					$father_name = $conn->query("SELECT * FROM student order by name asc ");
+					while($row= $father_name->fetch_assoc()):
+				?>
+				<option value="<?php echo $row['father_name'] ?>" <?php echo isset($father_name) && $father_name == $row['father_name'] ? 'selected' : '' ?>><?php echo ucwords($row['father_name'])?></option>
+				<?php endwhile; ?>
+			</select>
+		</div>
 		
 		<div class="form-group">
-			<label for="" class="control-label">Class/Medium</label>
+			<label for="" class="control-label">Class - Medium</label>
 			<select name="course_id" id="course_id" class="custom-select input-sm select2">
 				<option value=""></option>
 				<?php
 					$student = $conn->query("SELECT *,concat(course,'-',level) as class FROM courses order by course asc ");
 					while($row= $student->fetch_assoc()):
 				?>
-				<option value="<?php echo $row['id'] ?>" data-amount = "<?php echo $row['total_amount'] ?>" <?php echo isset($course_id) && $course_id == $row['id'] ? 'selected' : '' ?>><?php echo $row['class'] ?></option>
+				<option value="<?php echo $row['id'] ?>" data-amount = "<?php echo $row['total_amount'] ?>" <?php echo isset($course_id) && $course_id == $row['course_id'] ? 'selected' : '' ?>><?php echo ($row['class']) ?></option>
 				<?php endwhile; ?>
 			</select>
 		</div>

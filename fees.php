@@ -39,9 +39,9 @@
 									<th class="text-center">#</th>
 									<!-- <th class="">Admission No.</th> -->
 									<th class="">Admission No.</th>
-									<!-- <th class="">Class</th> -->
-									<th class="">Name</th>
-									<!-- <th class="">Father Name</th> -->
+									<!-- <th class="">Class/Medium</th> -->
+									<th class="">Student Name</th>
+									<th class="">Father Name</th>
 									<th class="">Payable Fee</th>
 									<th class="">Paid</th>
 									<th class="">Overall Concession</th>
@@ -75,9 +75,9 @@
 									<td>
 										<p> <b><?php echo ucwords($row['sname']) ?></b></p>
 									</td>
-									<!-- <td>
+									<td>
 										<p> <b><?php echo ucwords($row['father_name']) ?></b></p>
-									</td> -->
+									</td>
 									<td class="text-right">
 										<p> <b><?php echo number_format($row['total_fee'],2) ?></b></p>
 									</td>
