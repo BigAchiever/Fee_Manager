@@ -38,12 +38,14 @@ while($row=$payments->fetch_array()){
 
 </style>
 <div class="container-fluid">
-	<h4 class="text-center"><b><?php echo $_GET['pid'] == 0 ? "Payments" : 'Payment Receipt' ?></b></h4>
+	<h4 class="text-center"><b><?php echo $_GET['pid'] == 0 ? "Payments" : 'Symbiosis Senior Secondry School' ?></b></h4>
+	<h6 class="text-center"><b><?php echo $_GET['pid'] == 0 ? "Payments" : 'Maharajpur, Jabalpur, Contact:-0761-3560806' ?></b></h6>
 	<hr>
 	<div class="flex">
 		<div class="w-50">
 			<p>Admission Number: <b><?php echo $id_no ?></b></p>
 			<p>Student Name: <b><?php echo ucwords($sname) ?></b></p>
+			<p>Fathers Name: <b><?php echo ucwords($father_name) ?></b></p>
 			<p>Class/Medium: <b><?php echo $class ?></b></p>
 		</div>
 		<?php if($_GET['pid'] > 0): ?>

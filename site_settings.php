@@ -68,11 +68,11 @@ if($qry->num_rows > 0){
 				</div>
 				<div class="form-group">
 					<label for="email" class="control-label">Email</label>
-					<input type="email" class="form-control" id="email" name="email" value="<?php echo isset($meta['email']) ? $meta['email'] : '' ?>" required>
+					<input type="email" class="form-control" id="email" name="email" value="<?php echo isset($meta['email']) ? $meta['email'] : '' ?>" >
 				</div>
 				<div class="form-group">
 					<label for="contact" class="control-label">Contact</label>
-					<input type="text" class="form-control" id="contact" name="contact" value="<?php echo isset($meta['contact']) ? $meta['contact'] : '' ?>" required>
+					<input type="text" class="form-control" id="contact" name="contact" value="<?php echo isset($meta['contact']) ? $meta['contact'] : '' ?>" >
 				</div>
 				<div class="form-group">
 					<label for="about" class="control-label">About Content</label>
